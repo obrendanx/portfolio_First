@@ -159,11 +159,13 @@ html{
   text-transform:uppercase;
   font-size:1.2em;
   font-weight:lighter;
+  font-family: 'Electrolize', sans-serif;
 }
 
 .project a{
   color:#000;
   text-decoration:none;
+  font-family: 'Electrolize', sans-serif;
 }
 .project a:visited{
   color:#535657;
@@ -224,7 +226,7 @@ html{
 
 @media only screen and (max-width: 900px){
   .project{
-    width:60vw;
+    width:80vw;
     height:60vh;
   }
 
@@ -233,8 +235,13 @@ html{
   }
 
   .project h2{
-    width:60vw;
+    width:80vw;
     top:88.3%;
+  }
+
+  .project1, .project2, .project3, .project4{
+    background-repeat:no-repeat;
+    background-size:80vw 55vh;
   }
 }
 
@@ -254,3 +261,66 @@ html{
   }
 
 }
+
+/* letter aniamtion */
+  .letter_a{
+    animation-name: a;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes a {
+    0%{color:red;}
+    25%{color:pink;}
+    50%{color:green;}
+    75%{color:blue;}
+    100%{color:red;}
+  }
+
+  .letter_web{
+    animation-name: web;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes web {
+    0%{color:blue;}
+    25%{color:green;}
+    50%{color:red;}
+    75%{color:pink;}
+    100%{color:blue;}
+  }
+
+  .letter_developer{
+    animation-name: developer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes developer {
+    0%{color:pink;}
+    25%{color:red;}
+    50%{color:blue;}
+    75%{color:green;}
+    100%{color:pink;}
+  }
+
+/*
+  .project1{
+    animation-name: project1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes project1{
+    0%{border-radius:32px;}
+    15%{border-radius:41.6px;}
+    30%{border-radius:12px;}
+    45%{border-radius:25.2px;}
+    60%{border-radius:5px;}
+    75%{border-radius:37.8px;}
+    90%{border-radius:15px;}
+    100%{border-radius:32px;}
+  }
+  */
+/* fin */
